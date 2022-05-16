@@ -30,6 +30,9 @@ class PhpLibre
         ],
         'pdf' => [
             'html' => 'html:XHTML Impress File'
+        ],
+        'pptx' =>  [
+            'html' => 'html:XHTML Impress File'
         ]
     ];
     private $infilterOptions = [
@@ -56,7 +59,7 @@ class PhpLibre
     public function supports()
     {
         return [
-            'input' => ['pdf', 'doc'],
+            'input' => ['pdf', 'doc','pptx'],
             'output' => ['html']
         ];
     }
